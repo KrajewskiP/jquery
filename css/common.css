@@ -26,10 +26,10 @@ body {
     font-size: 2em;
     display: inline;
     color: #949494;
+    text-transform: capitalize;
 }
 
 #search-query {
-    text-transform: capitalize;
     margin-right: 10px;
 }
 
