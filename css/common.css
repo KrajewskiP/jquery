@@ -1,0 +1,68 @@
+body {
+    background-color: #000000;
+}
+
+.banner {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.banner h1 {
+    color: #949494;
+    font-size: 4em;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.search-bar {
+    margin-bottom: 1em;
+}
+
+.query {
+    font-size: 2em;
+    display: inline;
+    color: #949494;
+}
+
+#search-query {
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.common-value {
+    width: 6em;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.pic {
+    width: 210px;
+    height: 180px;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.25s;
+}
+
+.pic img:hover {
+    transform: scale(1.25);
+}
+
+.current-result {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
