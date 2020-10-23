@@ -35,6 +35,7 @@ body {
 
 .common-value {
     width: 6em;
+    text-align: center;
 }
 
 .content-container {

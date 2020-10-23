@@ -27,6 +27,7 @@ $(document).ready(function () {
     }
 
     $("#search").keypress(function(e){
+        console.log(e);
         if(e.which == 13){
             search($("#search").val());
         }
@@ -44,8 +45,9 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         const documentHeight = $(document).height();
-        const scrollTop = $(window).scrollTop();
-        if (scrollTop + document.body.clientHeight == documentHeight) {
+        const windowHeight = $(this).height();
+        const scrollTop = Math.trunc($(window).scrollTop());
+        if (scrollTop + windowHeight >= (documentHeight - 1)) {
             loadNextPage();
         }
     });
